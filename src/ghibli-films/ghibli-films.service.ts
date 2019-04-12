@@ -1,10 +1,8 @@
-import { Injectable, HttpException } from '@nestjs/common';
-import { FILMS } from '../mocks/films.mock';
+import { Injectable } from '@nestjs/common';
 import { get, post, Response } from 'request';
 
 @Injectable()
-export class FilmsService {
-    films = FILMS;
+export class GhibliFilmsService {
     uri = 'https://ghibliapi.herokuapp.com/films';
 
     getFilms(): Promise<any> {
@@ -21,4 +19,4 @@ export class FilmsService {
               });
             });
         }
-    }
+}
