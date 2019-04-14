@@ -10,7 +10,7 @@ export class GhibliFilmsController {
         const films = await this.filmsService.getFilms();
         const filmsTitle = [];
         films.map(f => {
-            filmsTitle.push(`${f.title}`);
+            filmsTitle.push({title: `${f.title}`});
         });
         return filmsTitle;
     }
