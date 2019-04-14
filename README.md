@@ -75,6 +75,6 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
   Nest is [MIT licensed](LICENSE).
 
 
-## To Run the API
+## To Run the API - * This endpoint returns JSON containing a list of Studio Ghibli Films, sorted by RT score
 
 - http://localhost:3000/ghibli-films
