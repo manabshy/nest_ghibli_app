@@ -16,7 +16,7 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+      expect(appController.getHello()).toBe('Check Ghibli Films at:http://localhost:3000/ghibli-films');
     });
   });
 });

@@ -73,3 +73,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](LICENSE).
+
+
+## To Run the API
+
+- http://localhost:3000/ghibli-films
