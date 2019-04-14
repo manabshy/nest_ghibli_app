@@ -10,9 +10,12 @@ export class GhibliFilmsController {
         const films = await this.filmsService.getFilms();
         const filmsTitle = [];
         films.map(f => {
-            filmsTitle.push({title: `${f.title}`});
+            filmsTitle.push({title: `${f.title}`, score: `${f.rt_score}`});
         });
-        return filmsTitle;
+        return (filmsTitle.sort((a, b) => {
+            return a.score - b.score;
+        }));
+
     }
 
 }
